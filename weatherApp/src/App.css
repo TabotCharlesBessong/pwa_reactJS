@@ -4,10 +4,11 @@ html, body, #root {
     color: #1e2432;
     height: 100%;
     margin: 0;
+    font-family: serif;
 }
 
 .main-container {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg');
+    background:url('../public/images/bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -18,6 +19,31 @@ html, body, #root {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-around;
+    /* height: auto; */
+    margin-bottom: 4rem;
+    background-color: #aaa;
+    /* margin: auto; */
+    border-radius: 2rem;
+    /* padding: 4rem auto; */
+}
+
+.title {
+    margin-bottom: 4rem;
+}
+
+.title, .subtitle {
+    margin: auto 2rem;
+    text-align: center;
+    color: #1e2432;
+    text-transform:capitalize;
 }
 
 .search {

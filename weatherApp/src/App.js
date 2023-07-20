@@ -4,7 +4,7 @@ import { fetchWeather } from "./api/fetchWeather";
 import "./App.css";
 
 const App = () => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("Buea");
   const [weather, setWeather] = useState({});
 
   const search = async (e) => {
@@ -18,10 +18,16 @@ const App = () => {
 
   return (
     <div className="main-container">
+      <div className="text" >
+        <h1 className="title">Weather App</h1>
+        <h2 className="subtitle">
+          Get weather condition in your area by searching by city Name
+        </h2>
+      </div>
       <input
         type="text"
         className="search"
-        placeholder="Search..."
+        placeholder="Search by city name..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyPress={search}
